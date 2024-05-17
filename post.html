@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Sail | SKŻ Sail Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="SKŻ Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="post.html">Post a Sail</a></li>
+                    <li><a href="browse.html">Browse Sails</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="post-sail">
+        <div class="container">
+            <h1>Post Your Sail for Sale</h1>
+            <form action="submit_sail.php" method="post" enctype="multipart/form-data">
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" required>
+                
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" required>
+                
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" required>
+                
+                <label for="contact">Contact Information:</label>
+                <input type="text" id="contact" name="contact" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SKŻ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
